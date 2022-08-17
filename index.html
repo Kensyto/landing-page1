@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Creative Website</title>
+</head>
+<body>
+        <section>
+                <div class="logo">Creative</div>
+                <img src="./imagens/logo.jpg"  class="bg" alt="">
+                <div class="content">
+                        <h2>Let's Make<br>Something Cretive</h2>
+                        <p>Tradução de textos: traduza 108 idiomas apenas digitando • Toque para traduzir: copie textos em qualquer app e toque no ícone do ... Tradutor para ...Dicionário multilíngue e buscador com acesso a um bilhão de traduções feitas por outras pessoas. Idiomas: português, inglês, espanhol, francês e alemão.</p>
+                        <a href="#">Get Started</a>
+                </div>
+                <p class="copyrightText">	&copy;2022 Berthaud </p>
+        </section>
+      
+        <div class="menuToggle" onclick="toggleMenu();">            
+        </div>
+
+        <div class="navigation" onclick="toggleMenu();">
+                <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div class="socialBar">
+                        <ul>
+                                <li><a href="#"><img src="./imagens/facebook.png"></a></li>
+                                <li><a href="#"><img src="./imagens/instagram.png"></a></li>
+                                <li><a href="#"><img src="./imagens/twitter.png"></a></li>
+                        </ul>
+                        <a href="mailto:...@email.com" class="emailBx"><img src="./imagens/email.png"></a>
+                </div>
+        </div>
+
+
+        <script type="text/javascript">
+                function toggleMenu(){
+                        var menuToggle = document.querySelector('.menuToggle');
+                         var navigation = document.querySelector('.navigation');
+                         menuToggle.classList.toggle('active');
+                         navigation.classList.toggle('active');
+                }
+        </script>
+</body>
+</html>
+
